@@ -1,4 +1,4 @@
-﻿using Leavewithasmilecleaningwebsite.Models;
+﻿//using Leavewithasmilecleaningwebsite.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -6,12 +6,12 @@ namespace Leavewithasmilecleaningwebsite.Controllers
 {
     public class HomeController : Controller
     {
-        private LeavewithasmilecleaningwebsiteContext context { get; set; }
+        //private LeavewithasmilecleaningwebsiteContext context { get; set; }
 
-        public HomeController(LeavewithasmilecleaningwebsiteContext ctx)
-        {
-            context = ctx;
-        }
+        //public HomeController(LeavewithasmilecleaningwebsiteContext ctx)
+        //{
+        //    context = ctx;
+        //}
 
         public IActionResult Index()
         {
