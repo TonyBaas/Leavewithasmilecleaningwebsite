@@ -14,17 +14,56 @@
         body {
             padding-top: 5rem;
         }
+
+        image-container {
+            position: relative;
+            display: inline-block; /* Ensures the container only takes up space of the image */
+        }
+
+        .overlay-box {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 50%; /* Adjust as needed */
+            background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+            z-index: 1;
+        }
+
+        .overlay-content {
+            position: absolute;
+            top: 50%;
+            left: 10%; /* Adjust the left position as needed */
+            transform: translate(-50%, -50%);
+            color: white;
+            z-index: 2;
+        }
+
+        .overlay-content p {
+            margin-bottom: 0; /* Remove extra margin */
+        }
+
+        .image-container img {
+            z-index: 0; /* Ensure the image stays behind the overlay */
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="image-container">
+                    <img src="Images/pvpYes.jpg" alt="Your Image" class="img-fluid">
+                    <div class="overlay-text">
+                        <h1 class="display-4">Leave With A Smile Cleaning</h1>
+                        <a class="btn btn-primary btn-lg" asp-controller="" asp-action="" role="button">Request a free estimate today!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="jumbotron mt-5">
-            <h1 class="display-4">Welcome to Leave With A Smile!</h1>
-            <p class="lead">Change me</p>
-            <hr class="my-4">
-            <p>Change me.</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            
         </div>
     </div>
 </body>
