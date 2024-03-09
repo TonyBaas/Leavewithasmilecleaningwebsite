@@ -1,24 +1,25 @@
-﻿<!DOCTYPE html>
+﻿@{
+    ViewData["Title"] = "Calendar";
+}
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendar</title>
-    <!-- Include jQuery UI CSS -->
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 </head>
 <body>
     <h1>Calendar</h1>
     <h2>Please select a date for when you would like a cleaning.</h2>
-    <!-- Input for Name -->
-    <input type="text" id="Name" />
+    <!-- Input for First Name -->
+    <input type="text" id="FName" />
+    <!-- Input for Last Name -->
+    <input type="text" id="LName" />
     <!-- Input for Datepicker -->
     <input type="text" id="datepicker">
+    <!-- Input for Comments -->
+    <textarea id="Comments"></textarea>
 
-    <!-- Include jQuery library -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Include jQuery UI library -->
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
         // Initialize the datepicker
         $(function () {
@@ -33,5 +34,10 @@
     <!-- Submit Button -->
     <input type="submit" id="Submit">
     <p>Please be advised that the date you choose may or may not work for the cleaners.</p>
+
+    <img src="~/Images/pvpYes.jpg" alt="Test">
+
 </body>
 </html>
+
+
