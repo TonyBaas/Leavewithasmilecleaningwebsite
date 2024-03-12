@@ -25,5 +25,10 @@ namespace Leavewithasmilecleaningwebsite.Controllers
         {
             return View();
         }
+
+        public IActionResult Residential()
+        {
+            return View();
+        }
     }
 }
